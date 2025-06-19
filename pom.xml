@@ -33,9 +33,9 @@
 
   <!-- 🔽 Nexus Deployment Configuration -->
   <distributionManagement>
-    <repositorory>
+    <repository>
       <id>nexus</id> <!-- Must match your settings.xml server ID -->
-      <url>http://15.206.84.135:8081//repository/maven-releases/in/aseemcloud/01-maven-web-app/3.0-RELEASE/01-maven-web-app-3.0-RELEASE.war</url>
+      <url>http://15.206.84.135:8081/repository/maven-releases</url>
     </repository>
   </distributionManagement>
 
