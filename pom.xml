@@ -16,6 +16,20 @@
     </dependency>
    
   </dependencies>
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots-repo</id>
+        <name>Snapshots Repository</name>
+        <url>http://15.206.84.135:8081//repository/sample-snapshots</url>
+    </snapshotRepository>
+	
+    <repository>
+        <id>releases-repo</id>
+        <name>Releases Repository</name>
+        <url>http://15.206.84.135:8081//repository/sample-releases</url>
+    </repository>
+</distributionManagement>
+  
   <build>
     <finalName>maven-cloudaseem-app</finalName>
     <plugins>
