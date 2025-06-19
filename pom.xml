@@ -9,6 +9,11 @@
   <url>http://maven.apache.org</url>
  
   <dependencies>
+    <groupId>in.aseemcloud</groupId>
+    <artifactId>01-maven-web-app</artifactId>
+    <version>3.0-RELEASE</version>
+    <packaging>war</packaging>
+
     <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
