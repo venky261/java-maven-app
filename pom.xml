@@ -1,27 +1,25 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>in.aseemcloud</groupId>
   <artifactId>01-maven-web-app</artifactId>
-  <packaging>war</packaging>
   <version>3.0-RELEASE</version>
+  <packaging>war</packaging>
+
   <name>01-maven-cloudaseem-app</name>
   <url>http://maven.apache.org</url>
- 
-  <dependencies>
-    <groupId>in.aseemcloud</groupId>
-    <artifactId>01-maven-web-app</artifactId>
-    <version>3.0-RELEASE</version>
-    <packaging>war</packaging>
 
+  <dependencies>
     <dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>3.8.1</version>
-    <scope>test</scope>
-</dependency>
- 
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
+
   <build>
     <finalName>maven-cloudaseem-app</finalName>
     <plugins>
@@ -32,4 +30,13 @@
       </plugin>
     </plugins>
   </build>
+
+  <!-- 🔽 Nexus Deployment Configuration -->
+  <distributionManagement>
+    <repository>
+      <id>nexus</id> <!-- Must match your settings.xml server ID -->
+      <url>http://15.206.84.135:8081/repository/maven-releases</url>
+    </repository>
+  </distributionManagement>
+
 </project>
